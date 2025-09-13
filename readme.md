@@ -22,7 +22,7 @@ O1 = S((Yi-Ym)*(Xi-Xm))/S((Xi-Xm)^2)
 
 O0 = Ym - O1*Xm
 
-## How calculate SE
+## How to calculate SE
 nf = n - (count freedom)
 
 SE(y) = sqrt(S(Yi-y(Xi)^2)/nf) 
@@ -31,14 +31,14 @@ SE(O0) = SE(y)*sqrt((1/n) + (Xm^2/S((Xi-Xm)^2)))
 
 SE(O1) = SE(y)*sqrt(1/S((Xi-Xm)^2))
 
-## How calculate interval
+## How to calculate interval
 ts - koeficent of Student (check the table)
 
 O+ = O + ts*SE(O)
 
 O- = O - ts*SE(O)
 
-## How calculate Statistics mean
+## How to calculate Statistics mean
 t = O1/SE(O1)
 
 if ts>t then H0 accept, mean that equal show random values instead of real;else ts<t accept alternate theory Ha
